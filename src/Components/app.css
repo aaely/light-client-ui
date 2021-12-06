@@ -1,0 +1,242 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 93vh;
+    width: 100vw;
+    margin-top: 7vh;
+}
+
+.postContainer {
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 100vw;
+    overflow-anchor: none;
+}
+
+.productsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+
+.deckContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    max-height: 30vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    padding:10vh;
+    margin: 10vw;
+}
+
+.bodyContainer {
+    display: flex;
+    position: relative;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    border-top: 3px solid #555;
+    border-left: 3px solid #555;
+    border-right: 3px double #555;
+    border-radius: 5%;
+    padding: 3%;
+    overflow-anchor: none;
+}
+
+.bodyHeader {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: aqua;
+    border-radius: 10%;
+}
+
+.bodyText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    max-height: 30vh;
+    justify-content: space-around;
+    background-color: #ddd;
+    overflow: auto;
+    padding: 3%;
+    border-radius: 10%;
+}
+
+.bodyContainer:hover {
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.4);
+    scale: 1.2;
+}
+
+.bodyFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 40vw;
+}
+
+.bodyFooter > a:hover {
+    background-color: #ccc;
+}
+
+.bodyFooter > a {
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footerItem {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 50%;
+    width: 10%;
+    border-radius: 20%;
+    background-color: #ccc;
+    color: black;
+}
+
+.footerItem:hover {
+    background-color: #555;
+    color: rgb(255, 187, 0)
+}
+
+.commentsContainer {
+    background-color: #333;
+    border-radius: 5%;
+}
+
+.commentsContainer:hover {
+    background-color: #555;
+    border-radius: 5%;
+}
+
+.commentsHeader {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.commentsHeader > a {
+    color: rgb(255, 123, 0);
+    padding-left: 2%;
+}
+
+.commentsHeader > p {
+    color: cyan;
+    width: 100%;
+}
+
+.commentsBody {
+    display: flex;
+    flex-wrap: wrap;
+    color: lime;
+    width: 40vw;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.commentsFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 2vh;
+    width: 37vw;
+    padding: 2%;
+    border-radius: 10%;
+    background-color: #ccc;
+}
+
+.commentsFooter > div {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    color: lime;
+    border-radius: 20%;
+    padding: 1%;
+}
+
+.commentsFooter > div:hover {
+    color: cyan;
+}
+
+.feedBanner {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.deckContainer {
+    background: lightblue;
+    cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+      auto;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  .deck {
+    position: absolute;
+    max-width: 30vw;
+    max-height: 50vh;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: center;
+    touch-action: none;
+  }
+  
+  .deck > div {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 30vw;
+    max-height: 50vh;
+    width: 30vw;
+    height: 50vh;
+    will-change: transform;
+    border-radius: 10px;
+    box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+  }
